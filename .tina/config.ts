@@ -22,7 +22,8 @@ export default defineConfig({
       {
         name: "post",
         label: "Posts",
-        path: "content/posts",
+        path: "src/contents",
+        format: 'md',
         fields: [
           {
             type: "string",
@@ -37,11 +38,7 @@ export default defineConfig({
             label: "Body",
             isBody: true,
           },
-        ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
-        },
+        ]
       },
     ],
   },
