@@ -33,6 +33,64 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "string",
+            name: "author",
+            label: "Author",
+            required: true,
+          },
+          {
+            type: "datetime",
+            name: "datetime",
+            label: "DateTime",
+            ui: {
+              component: 'date',
+              dateFormat: 'YYYY-MM-DD',
+              timeFormat: 'HH:mm'
+            },
+            required: true,
+          },
+          {
+            type: "string",
+            name: "slug",
+            label: "Slug",
+            required: true,
+          },
+          {
+            type: "boolean",
+            name: "featured",
+            label: "Featured",
+            required: true,
+          },
+          {
+            type: "boolean",
+            name: "draft",
+            label: "Draft",
+            required: true,
+          },
+          {
+            name: "tags",
+            type: 'string',
+            list: true,
+            description: 'test',
+            label: "Tags",
+            ui: {
+              component: 'tags'
+            },
+            required: true,
+          },
+          {
+            type: "image",
+            name: "ogImage",
+            label: "ogImage",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            required: true,
+          },
+          {
             type: "rich-text",
             name: "body",
             label: "Body",
