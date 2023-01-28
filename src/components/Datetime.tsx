@@ -26,7 +26,7 @@ export default function Datetime({ datetime, size = "sm", className }: Props) {
 }
 
 const FormattedDatetime = ({ datetime }: { datetime: string }) => {
-  const myDatetime = new Date(datetime);
+  const myDatetime = datetime ? new Date(datetime) : new Date();
 
   const date = myDatetime.toLocaleDateString([], {
     year: "numeric",
