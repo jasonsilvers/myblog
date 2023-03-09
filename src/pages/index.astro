@@ -25,30 +25,29 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h2 class="text-3xl">
-        Hi, I'm Jason Silvers. I help organizations bring their ideas to life,
-        one line of code at a time.
-      </h2>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="rss-link"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
-          ><path
-            d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
-          ></path><path
-            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
-          ></path><circle cx="6" cy="18" r="2"></circle>
-        </svg>
-      </a>
+      <div class="flex space-x-5">
+        <h2 class="text-3xl">Hi, I'm Jason Silvers</h2>
+        <a
+          target="_blank"
+          href="/rss.xml"
+          class="rss-link"
+          aria-label="rss feed"
+          title="RSS Feed"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
+            ><path
+              d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
+            ></path><path
+              d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
+            ></path><circle cx="6" cy="18" r="2"></circle>
+          </svg>
+        </a>
+      </div>
 
       <p>
         I'm a husband, a software engineer, and a lifelong learner. I'm
         passionate about building things that make a difference in the world. I
-        love to cycle, hike, golf and travel with my wife Brandy.
+        love to cycle, hike, golf and travel with my spouse Brandy.
       </p>
 
       {
@@ -128,7 +127,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply mb-6;
   }
   #hero .rss-icon {
-    @apply h-6 w-6 scale-110 sm:scale-125 mb-2 sm:mb-3 fill-skin-accent;
+    @apply h-6 w-6 scale-110 sm:scale-125 fill-skin-accent;
   }
   #hero p {
     @apply my-2;
